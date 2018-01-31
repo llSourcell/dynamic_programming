@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--No IE compatibility mode-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Alignment Visualizer</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="align.css" />
+	</head>
+<body onload="init()">
+<div id="subcell" class="subcell-hidden"><div id="subvaldiag" class="subcell1 colormat">-2</div><div id="subvaldel" class="subcell2">-7</div><div id="subvalins" class="subcell3">-3</div><div id="subvalmain" class="subcell4 colormat">-2</div><div id="subvalzero" class="subcell5">0</div></div>
+<div class="container-fluid">
+<nav class="navbar navbar-default">
+	<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapsed" aria-expanded="false">
+        <span class="sr-only">Open navigation menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	<p class="navbar-brand">Alignment Visualizer</p>
+    </div>
+	<div class="collapse navbar-collapse" id="nav-collapsed"><ul class="nav navbar-nav no-center">
+        <li class="active"><a href="#">Home<span class="sr-only">(this page)</span></a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://github.com/Valiec/AlignmentVisualizer">GitHub</a></li>
+    </ul></div>
+</nav>
+<div class="row">
+<div class="col-md-6 col-sm-12">
+<form>
+	<label>Algorithm: <select id="algorithm">
+		<option value = "global">Global Alignment</option>
+		<option value = "local">Local Alignment</option>
+		<option value = "fitting">Fitting Alignment</option>
+		<option value = "overlap">Overlap Alignment</option>
+	</select></label>
+</form>
+<p id = "descr"></p>
+<form>
+	<label class="" for="s1">Sequence 1: </label><br><input id="s1" class="seq" /><br>
+	<label class="" for="s2">Sequence 2: </label><br><input id="s2" class="seq" />
+	<br>
+</form>
+
+<div class="scmatd"><form>
+	<br><p class="bold-font">Scoring matrix:</p>
+	<table>
+		<tr><th></th> <th class="scmathead">A</th> <th class="scmathead">T</th> <th class="scmathead">C</th> <th class="scmathead">G</th></tr>
+		<tr><th>A&nbsp;&nbsp;</th> <td><input type="number" id = "AA" class="scmatf" /></td> <td><input type="number" id = "AT" class="scmatf" /></td> <td><input type="number" id = "AC" class="scmatf" /></td> <td><input type="number" id = "AG" class="scmatf" /></td></tr>
+		<tr><th>T&nbsp;&nbsp;</th> <td><input type="number" id = "TA" class="scmatf" /></td> <td><input type="number" id = "TT" class="scmatf" /></td> <td><input type="number" id = "TC" class="scmatf" /></td> <td><input type="number" id = "TG" class="scmatf" /></td></tr>
+		<tr><th>C&nbsp;&nbsp;</th> <td><input type="number" id = "CA" class="scmatf" /></td> <td><input type="number" id = "CT" class="scmatf" /></td> <td><input type="number" id = "CC" class="scmatf" /></td> <td><input type="number" id = "CG" class="scmatf" /></td></tr>
+		<tr><th>G&nbsp;&nbsp;</th> <td><input type="number" id = "GA" class="scmatf" /></td> <td><input type="number" id = "GT" class="scmatf" /></td> <td><input type="number" id = "GC" class="scmatf" /></td> <td><input type="number" id = "GG" class="scmatf" /></td></tr>
+	</table>
+	<br>
+	<label>Gap penalty: <input type="number" id = "gap" class="scmatf" /></label><br>
+</form></div>
+
+</div>
+<div class="col-md-6 col-xs-12">
+<div class="">
+<div class=""><p id="output" class="outh"><span class="outhead">Alignment:</span><br>
+	<span id="s1a" class="data"></span>
+	<br>
+	<span id="pmap" class="data"></span>
+	<br>
+	<span id="s2a" class="data"></span>
+	<br>Score: <span id="sc">0</span>
+
+<div class=""><table id="sctab" class="outh"></table></div></p></div>
+
+<div class=""><ul id="errors" class="outh"></ul></div></div></div></div>
+<div class="spacer"></div>
+<footer class="footer">Copyright 2016 Caiden Kumar - <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">Licensed under the AGPL v3.0</a></footer></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="align.js"></script></body>
+</html>

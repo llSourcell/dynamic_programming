@@ -1,10 +1,4 @@
-# dynamic_programming
-This is the code for "Dynamic Programming" by Siraj Raval on Youtube 
-
-
-# Overview 
-
-This is the code for [this](https://youtu.be/DiAtV7SneRE) video on Youtube by Siraj Raval on Dynamic Programming. 
+# AlignmentVisualizer
 
 Working demo at: https://valiec.github.io/AlignmentVisualizer
 
@@ -15,9 +9,3 @@ It supports four different alignment algorithms: Global Alignment, Local Alignme
 Though it is intended as a teaching tool, it can also be useful to programmers debugging alignment algorithms, since it allows you to see both the aligned sequences and the dynamic programming matrix (including traceback directions) for an alignment.
 
 If you're a programmer who wants to make a custom version of Alignment Visualizer to test an unusual alignment, you can. However, if you distribute your custom version, please provide a link back to the original version. I don't want a ton of versions of Alignment Visualizer, all slightly different, on the internet and users not knowing which is the original.
-
-
-
-# Credits 
-
-Credits go to [Valiec](https://github.com/Valiec/AlignmentVisualizer). I've merely created a wrapper to get people started. 

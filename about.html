@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--No IE compatibility mode-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Alignment Visualizer</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="align.css" />
+	</head>
+<body>
+<div class="container-fluid">
+<nav class="navbar navbar-default">
+	<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapsed" aria-expanded="false">
+        <span class="sr-only">Open navigation menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	<p class="navbar-brand">Alignment Visualizer</p>
+    </div>
+	<div class="collapse navbar-collapse" id="nav-collapsed"><ul class="nav navbar-nav no-center">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">About<span class="sr-only">(this page)</span></a></li>
+        <li><a href="https://github.com/Valiec/AlignmentVisualizer">GitHub</a></li>
+    </ul></div>
+</nav>
+<div class="row"><div class="col-md-6 col-sm-12"><h4>About Alignment Visualizer:</h4>
+
+	<p>Alignment Visualizer is a web app which will show you the dynamic programming matrix for an alignment of two DNA sequences. I developed it in the summer of 2016 as a teaching tool to help people understand how dynamic programming works in DNA sequence alignments. </p>
+
+	<p>It supports four different alignment algorithms: Global Alignment, Local Alignment, Fitting Alignment, and Overlap Alignment. All alignments are implemented with linear gap penalties. You can enter two sequences and modify the scoring matrix, and Alignment Visualizer will show you the dynamic programming matrix for the alignment. You are also able to see all the possible scores for a cell (one for each direction) as well as the one chosen (i.e. the maximum).</p>
+
+	<p>Though it is intended as a teaching tool, it can also be useful to programmers debugging alignment algorithms, since it allows you to see both the aligned sequences and the dynamic programming matrix (including traceback directions) for an alignment.</p>
+
+	<p>If you're interested in viewing the source for Alignment Visualizer, it's available through the GitHub link at the top. If you're a programmer who wants to make a custom version of Alignment Visualizer to test an unusual alignment, you can. However, if you distribute your custom version, please provide a link back to the original version. I don't want a ton of versions of Alignment Visualizer, all slightly different, on the internet and users not knowing which is the original.</p>
+
+</div><div class="col-md-6 col-sm-12"><h4>More Info:</h4><ul><li>All rewards/penalties are added to the previous score. Therefore, penalties must be negative values and rewards positive values.</li><li>You can hover over an element to see all of the sub-cell scores from which the final cell score was chosen.</li></ul></div></div>
+<div class="spacer"></div>
+<footer class="footer">Copyright 2016 Caiden Kumar - <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">Licensed under the AGPL v3.0</a></footer></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script></body>
+</html>

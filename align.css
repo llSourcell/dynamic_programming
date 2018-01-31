@@ -1,0 +1,355 @@
+body
+{
+	background-color: #FCFCFC; /*#EEEEEE*/
+}
+
+.scmatf /*input*/
+{
+	color: #555555;
+	font-weight: normal;
+}
+
+.bold-font
+{
+	font-weight: bold;
+}
+
+.output
+{
+	font-size: 120%;
+}
+.outerr
+{
+
+}
+.error
+{
+	color: red;
+}
+.notice
+{
+	color: #888888;
+}
+.sctab
+{
+	border-collapse: collapse;
+}
+.outh
+{
+	display: none;
+}
+
+.outpane
+{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.scmatd
+{
+	display: block;
+}
+
+.scmatm
+{
+	display: none;
+}
+
+.scmatf
+{
+	width:50px;
+}
+
+.seq
+{
+	font-weight: normal;
+	width:250px;
+}
+
+.ins
+{
+	background-image: url(arrowleft.png);
+	background-repeat: no-repeat;
+	color: #0000FF;
+}
+.del
+{
+	background-image: url(arrowup.png);
+	background-repeat: no-repeat;
+	color: #FF0000;
+}
+.mis
+{
+	background-image: url(arrowdiagorange.png);
+	background-repeat: no-repeat;
+	color: #FF8800;
+}
+.mat
+{
+	background-image: url(arrowdiaggreendark.png);
+	background-repeat: no-repeat;
+	color: #000000;
+}
+.end
+{
+	color: #000000;
+}
+
+.subcell-ins
+{
+	background-image: url(arrowlargeleft.png);
+	background-repeat: no-repeat;
+}
+.subcell-del
+{
+	background-image: url(arrowlargeup.png);
+	background-repeat: no-repeat;
+}
+.subcell-mis
+{
+	background-image: url(arrowlargediagorange.png);
+	background-repeat: no-repeat;
+}
+.subcell-mat
+{
+	background-image: url(arrowlargediaggreen.png);
+	background-repeat: no-repeat;
+}
+.subcell-end
+{
+
+}
+
+.subcell
+{
+	border: solid 2px #444444;
+	position: absolute;
+	top:285px;
+	left:342px;
+	width:150px;
+	height:150px;
+}
+
+.subcell-hidden
+{
+	display: none;
+}
+
+.subcell1
+{
+	/*border: solid 2px #444444;*/
+	position: absolute;
+	text-align: center;
+	top:0px;
+	left:0px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	font-size: 19px;
+}
+
+.subcell2
+{
+	/*border: solid 2px #444444;*/
+	position: absolute;
+	text-align: center;
+	top:0px;
+	left:55px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	font-size: 19px;
+	color: #FF0000;
+}
+
+.subcell3
+{
+	/*border: solid 2px #444444;*/
+	position: absolute;
+	text-align: center;
+	top:55px;
+	left:0px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	font-size: 19px;
+	color: #0000FF;
+}
+
+.subcell4
+{
+	/*border: solid 2px #444444;*/
+	position: absolute;
+	text-align: center;
+	top:65px;
+	left:65px;
+	width:90px;
+	height:90px;
+	line-height:90px;
+	font-size: 48px;
+}
+
+.subcell5
+{
+	/*border: solid 2px #444444;*/
+	position: absolute;
+	text-align: center;
+	top:55px;
+	left:55px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	font-size: 19px;
+	color: #000000;
+}
+
+.subcell5-hidden
+{
+	display:none;
+}
+
+.hover-cell
+{
+	cursor: pointer;
+}
+
+.btn-link
+{
+	cursor: pointer;
+}
+
+.colormis
+{
+	color: #FF8800;
+}
+
+.colormat
+{
+	color: #00FF00;
+}
+
+.colorins
+{
+	color: #0000FF;
+}
+
+.colordel
+{
+	color: #FF0000;
+}
+
+.colorzero
+{
+	color: #000000;
+}
+
+.sccell
+{
+	border: solid 2px #444444;
+}
+.path
+{
+	border: solid 3px #00FF00;
+}
+.other
+{
+	border: solid 3px #FCFCFC;
+}
+.tabcell, .tabcell-active
+{
+	font-size: 95%;
+	text-align: right;
+	width: 36px;
+	height: 36px;
+}
+.tabhead
+{
+	font-size: 95%;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+}
+
+.hover-cell.other:hover
+{
+	border: solid 3px #EFEFEF;
+}
+
+.hover-cell:hover
+{
+	background-color: #EFEFEF;
+	font-size: 95%;
+	text-align: right;
+	width: 36px;
+	height: 36px;
+}
+
+.scmathead
+{
+	text-align: center;
+}
+
+
+.data
+{
+	font-family: monospace;
+	white-space: nowrap;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #CDCDE6; /*95A5F0, #5FC6D7*/
+    border-color: #E7E7E7;
+    width: 98%;
+    margin-left: auto;
+	margin-right: auto;
+
+}
+
+.footer
+{
+	/*position: fixed;*/
+	bottom:0px;
+	height:40px;
+	line-height:40px;
+	color:#AAAAAA;
+	/*border: 3px solid black;*/
+	width:100%;
+	background-color: #EDEDFF; /*95A5F0, #5FC6D7*/
+}
+
+@media(min-width: 792px){
+
+	.footer
+	{
+		position: fixed;
+		bottom:0px;
+		left:0px;
+		height:40px;
+		line-height:40px;
+		color:#AAAAAA;
+		padding-left: 10px;
+		/*width:100%;*/
+		background-color: #EDEDFF; /*95A5F0, #5FC6D7*/
+	}
+
+	.spacer
+	{
+		display:block;
+		width:100%;
+		height:40px;
+	}
+
+}
+
+#descr
+{
+	max-width:550px;
+}
+
+.no-center
+{
+	text-align: left;
+}
